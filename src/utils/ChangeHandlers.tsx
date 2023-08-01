@@ -21,10 +21,3 @@ export const handleChange: InputChangeHandler<Base | any> = (
     [e.target.name]: e.target.value,
   });
 };
-export const simpleHandleChange: InputChangeHandler<Base> = (
-  e,
-  variable,
-  setVariable
-) => {
-  setVariable(e.target.value as Base);
-};
