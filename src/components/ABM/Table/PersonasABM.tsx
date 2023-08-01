@@ -4,7 +4,6 @@ import {
   faPenToSquare,
   faPerson,
   faPlus,
-  faRuler,
   faTrashCan,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
