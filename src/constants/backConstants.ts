@@ -1,1 +1,1 @@
-export const backend_url = "api/v1"
+export const backend_url = import.meta.env.VITE_API_SERVER_URL;
