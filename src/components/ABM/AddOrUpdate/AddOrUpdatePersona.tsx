@@ -127,14 +127,15 @@ export const AddOrUpdatePersona = () => {
             required
           />
           <div className="relative z-0 col-span-3 flex w-full gap-3">
-            <Button type="submit" content="add" fullsize={true} color="rojo"/>
+            <Button type="submit" content="add" fullsize={true} color="rojo" />
             {isLoading && (
               <div className="absolute -right-20 flex items-center">
                 <ClipLoader
                   size={45}
                   aria-label="Loading Spinner"
                   data-testid="loader"
-                  color=""
+                  color="#EC4899
+                  "
                 />
               </div>
             )}
