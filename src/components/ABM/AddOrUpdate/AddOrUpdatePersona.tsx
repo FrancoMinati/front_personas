@@ -1,11 +1,8 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-
 import { basePersona, Persona } from "../../../interfaces/Persona";
-import { AxiosError } from "axios";
 import { ClipLoader } from "react-spinners";
 import { Button } from "../../Button/Button";
-import { save, update } from "../../../API/BaseRequests";
 import { InputLabel } from "../../Form/InputLabel";
 import { baseDomicilio, Domicilio } from "../../../interfaces/Domicilio";
 import {
