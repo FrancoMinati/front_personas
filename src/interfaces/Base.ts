@@ -1,3 +1,3 @@
-export interface Base{
-    id?: number;
+export interface Base  {
+  id?: number;
 }

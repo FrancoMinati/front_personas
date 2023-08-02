@@ -16,8 +16,9 @@ export const handleChange: InputChangeHandler<Base | any> = (
   variable,
   setVariable
 ) => {
-  setVariable({
+  const { name, value } = e.target;
+  setVariable(() => ({
     ...variable,
-    [e.target.name]: e.target.value,
-  });
+    [name]: value,
+  }));
 };

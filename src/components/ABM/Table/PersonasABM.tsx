@@ -71,6 +71,9 @@ export const PersonasABM = () => {
                       <th className="px-6 py-4">Nombre</th>
                       <th className="px-6 py-4">Apellido</th>
                       <th className="px-6 py-4">DNI</th>
+                      <th className="px-6 py-4">Calle</th>
+                      <th className="px-6 py-4">Numero</th>
+                      <th className="px-6 py-4">Localidad</th>
                       <th className="px-6 py-4 text-center text-neutral-100">
                         {" "}
                         Acciones
@@ -88,6 +91,15 @@ export const PersonasABM = () => {
                         <td className="px-6 py-4">{persona.nombre}</td>
                         <td className="px-6 py-4">{persona.apellido}</td>
                         <td className="px-6 py-4">{persona.dni}</td>
+                        <td className="px-6 py-4">
+                          {persona.domicilio?.calle}
+                        </td>
+                        <td className="px-6 py-4">
+                          {persona.domicilio?.numero}
+                        </td>
+                        <td className="px-6 py-4">
+                          {persona.domicilio?.localidad}
+                        </td>
                         <td className="px-6 py-4">
                           <div className="m-0 flex h-full items-center justify-center gap-16 p-0">
                             <Link to={`/ABM/Personas/edit/${persona.id}`}>
